@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: teal;
+
+}
+
+.book {
+    width: 90%;
+    margin: auto;
+}
+
+.book h2 {
+    color: lightcyan;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.all-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.add {
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+button {
+    font-size: 18px;
+    padding: 5px 10px;
+
+
+}
+
+.filter {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    border: 5px solid white;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 748px) {
+    .book h2 {
+        font-size: 30px;
+    }
+
+    .add {
+        flex-direction: column;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    li {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    li button {
+        font-size: 15px;
+        padding: 2px;
+        justify-content: space-around;
+        margin-right: 10px;
+    }
+}

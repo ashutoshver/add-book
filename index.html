@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="book">
+    <h2>Simple Address Book Manager</h2>
+
+    <div class="all-input">
+      <div class="add">
+        <div>
+          <label>Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div>
+          <label>Mobile:</label>
+          <input type="tel" name="phone" id="mobile" pattern="[0-9]{4}-[0-9]{4}-[0-9]
+          {2}" required>
+        </div>
+
+
+        <button id="addcont">Add Contact</button>
+      </div>
+      <h2>Search</h2>
+      <div class="filter">
+
+        <input type="text" id="filterName" placeholder="search by name" oninput="filterContacts()">
+
+        <input type="text" id="filterMobile" placeholder="search by phone no." oninput="filterContacts()">
+      </div>
+
+
+    </div>
+    <ul id="contactList"></ul>
+
+  </div>
+
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
